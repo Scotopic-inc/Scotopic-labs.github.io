@@ -4,36 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scotopix - Data Analytics and Global Networks</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 80vh;
+            background-image: url('https://source.unsplash.com/1600x900/?data,network');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-text {
+            color: white;
+            font-size: 4em;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .box h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 1em;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="header">
-        Scotopix
+<div class="header">
+    Scotopix
+</div>
+<div class="hero-image">
+    <div class="hero-text">
+        Data Analytics and Global Networks
     </div>
-    <div class="hero-image">
-        <div class="hero-text">
-            Data Analytics and Global Networks
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="box">
+                <img src="https://source.unsplash.com/300x200/?network,technology" alt="Interconnected Networks">
+                <h3>Interconnected Networks</h3>
+                <p>Empowering industries through seamless global connectivity.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <img src="https://source.unsplash.com/300x200/?collaboration,teamwork" alt="Collaboration">
+                <h3>Collaboration</h3>
+                <p>Enhance teamwork and data-driven decision-making across the world.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <img src="https://source.unsplash.com/300x200/?innovation,technology" alt="Innovative Technology">
+                <h3>Innovative Technology</h3>
+                <p>Utilizing cutting-edge technology to harness the power of data.</p>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="box">
-            <img src="https://example.com/image1.jpg" alt="Interconnected Networks">
-            <h3>Interconnected Networks</h3>
-            <p>Empowering industries through seamless global connectivity.</p>
-        </div>
-        <div class="box">
-            <img src="https://example.com/image2.jpg" alt="Collaboration">
-            <h3>Collaboration</h3>
-            <p>Enhance teamwork and data-driven decision-making across the world.</p>
-        </div>
-        <div class="box">
-            <img src="https://example.com/image3.jpg" alt="Innovative Technology">
-            <h3>Innovative Technology</h3>
-            <p>Utilizing cutting-edge technology to harness the power of data.</p>
-        </div>
-    </div>
-    <div class="footer">
-        &copy; 2023 Scotopix. All rights reserved.
-    </div>
+</div>
+<div class="footer">
+    &copy; 2023 Scotopix. All rights reserved.
+</div>
 </body>
 </html>
