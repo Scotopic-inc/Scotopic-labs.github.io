@@ -7,11 +7,15 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
+  background-color: #f4f4f4;
 }
 
 header {
   background-color: #1f1f1f;
   color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav {
@@ -39,6 +43,4 @@ nav a {
 }
 
 .hero {
-  padding: 50px;
-  text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0
+  padding: 150
