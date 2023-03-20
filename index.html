@@ -6,31 +6,63 @@
     <title>Scotopix - Data Analytics and Global Networks</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        body {
+            position: relative;
+            padding-top: 100px;
+        }
+
         .header {
-            background-color: #333;
-            padding: 20px;
-            text-align: center;
-            color: white;
-            font-size: 1.5em;
-        }
-
-        .hero-image {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 80vh;
-            background-image: url('https://source.unsplash.com/1600x900/?data,network');
-            background-size: cover;
-            background-position: center;
+            background-color: #fff;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
         }
 
-        .hero-text {
-            color: white;
-            font-size: 4em;
-            font-weight: bold;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .company-name {
+            color: #1e2124;
+            font-size: 1.5em;
+            margin-left: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-link {
+            color: #1e2124;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: lightgray;
+        }
+
+        .intro-text {
+            width: 50%;
+            font: "Alliance No.2","Alliance No.1",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 60px;
+            margin-bottom: 30px;
+            text-align: left;
+            float:left;
+        }
+
+        .intro-image {
+            width: 100%;
+            height: 650px;
+            margin-bottom: 30px;
         }
 
         .box img {
@@ -59,33 +91,40 @@
 </head>
 <body>
 <div class="header">
-    Scotopix
-</div>
-<div class="hero-image">
-    <div class="hero-text">
-        Data Analytics and Global Networks
+    <div class="d-flex align-items-center">
+        <img src="https://user-images.githubusercontent.com/128325685/226222171-25b4e018-f87b-4192-8e2b-043eaf6a9e6a.svg" alt="Logo" class="logo">
+        <span class="company-name">Scotopix</span>
+    </div>
+    <div class="nav-links">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Solutions</a>
+        <a href="#" class="nav-link">Contact</a>
     </div>
 </div>
 <div class="container">
+    <p class="intro-text">
+         Data analytics, for every situation
+    </p>
+        <img src="https://user-images.githubusercontent.com/128325685/226216083-307d8a1d-4dc1-4561-aba6-75f9b58245b0.png" alt="Data Analytics and Global Networks" class="intro-image">
     <div class="row">
         <div class="col-md-4">
             <div class="box">
                 <img src="https://source.unsplash.com/300x200/?network,technology" alt="Interconnected Networks">
-                <h3>Interconnected Networks</h3>
+                <h3>Past Projects</h3>
                 <p>Empowering industries through seamless global connectivity.</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="box">
                 <img src="https://source.unsplash.com/300x200/?collaboration,teamwork" alt="Collaboration">
-                <h3>Collaboration</h3>
+                <h3>Solutions</h3>
                 <p>Enhance teamwork and data-driven decision-making across the world.</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="box">
                 <img src="https://source.unsplash.com/300x200/?innovation,technology" alt="Innovative Technology">
-                <h3>Innovative Technology</h3>
+                <h3>About</h3>
                 <p>Utilizing cutting-edge technology to harness the power of data.</p>
             </div>
         </div>
