@@ -5,64 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scotopix - Data Analytics and Global Networks</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <style>
-        body {
-            position: relative;
-            padding-top: 100px;
+        body, html {
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1A202C;
+            color: #FFFFFF;
+            margin: 0;
         }
 
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-            z-index: 1000;
-        }
-
-        .logo {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
-        }
-
-        .company-name {
-            color: #1e2124;
-            font-size: 1.5em;
-            margin-left: 10px;
-        }
-
-        .nav-links {
-            display: flex;
-        }
-
-        .nav-link {
-            color: #1e2124;
-            margin: 0 10px;
+        a {
             text-decoration: none;
         }
 
-        .nav-link:hover {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        .content {
+            flex-grow: 1;
+        }
+
+        .navbar {
+            background-color: #1A202C;
+            border-bottom: thick solid;
+        }
+        .navbar-brand span {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        font-weight: bold;
+        }
+
+        .navbar-brand img {
+            width: 50px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #FFFFFF;
+            margin: 0 10px;
+        }
+
+        .navbar-nav .nav-link:hover {
             color: lightgray;
+        }
+
+        .intro-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 60px;
         }
 
         .intro-text {
             width: 50%;
-            font: "Alliance No.2","Alliance No.1",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-            font-size: 60px;
-            margin-bottom: 30px;
-            text-align: left;
-            float:left;
+            font-size: 2.5rem;
+            font-weight: 500;
+            line-height: 1.2;
         }
 
         .intro-image {
             width: 100%;
             height: 650px;
-            margin-bottom: 30px;
+            object-fit: cover;
         }
 
         .box img {
@@ -75,63 +87,185 @@
         .box h3 {
             margin-top: 20px;
             margin-bottom: 10px;
+            font-weight: 500;
         }
 
         .footer {
             background-color: #333;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
             color: white;
             font-size: 1em;
         }
+        .row {
+        margin-bottom: 100px;
+        padding-top: 50px;
+
+        }
+
+        .navbar-toggler {
+        border: none;
+        outline: none;
+        }
+
+        .navbar-toggler:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon {
+            width: 30px;
+            height: 2px;
+            background-color: #FFFFFF;
+            position: relative;
+        }
+
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #FFFFFF;
+            position: absolute;
+        }
+
+        .navbar-toggler-icon::before {
+            top: -10px;
+        }
+
+        .navbar-toggler-icon::after {
+            bottom: -10px;
+        }
+        .section-title {
+        text-align: center;
+        font-size: 2rem;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+        }
+        .services-section {
+        background-color: #4A6679;
+        padding: 50px 0;
+        }
+        .partners-section {
+        background-color: #717D8C;
+        padding: 50px 0;
+        }
+        .partners-description {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .partner-logo {
+        width: 100px;
+        height: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        }
+
+
     </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="https://user-images.githubusercontent.com/128325685/226222171-25b4e018-f87b-4192-8e2b-043eaf6a9e6a.svg" alt="Logo">
+                    <span>Scotopix</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="container">
+                <section class="intro-section">
+                    <div class="intro-text">
+                        Data analytics, for every situation
+                    </div>
+                    <img src="https://user-images.githubusercontent.com/128325685/226216083-307d8a1d-4dc1-4561-aba6-75f9b58245b0.png" alt="Data Analytics and Global Networks" class="intro-image">
+                </section>
+            </div>
+
+            <section class="services-section">
+                <div class="container-fluid">
+                    <h2 class="section-title">What We Do</h2>
+                    <section class="row justify-content-center box-section">
+                        <div class="col-md-4">
+                            <div class="box">
+                                <i class="fas fa-chess fa-5x"></i>
+                                <h3>Strategy</h3>
+                                <p>A Wealth of Experience to Guide Your Data Journey: With over 30 years of combined experience in data management across retail, finance, and government sectors, our team is well-equipped to evaluate and optimize your data strategies. We excel at structuring, storing, and analyzing your data to propel your business forward and help you achieve your goals.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <i class="fas fa-project-diagram fa-5x"></i>
+                                <h3>Data Engineering</h3>
+                                <p>Leveraging Multi-Cloud Expertise for Your Data Transformation: As a trusted Databricks partner, our team possesses extensive experience across various cloud providers, ensuring seamless data transformation and aggregation. Our versatile approach allows us to provide tailored solutions to address your unique data requirements and help you stay ahead in a data-driven world.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <i class="fas fa-lightbulb fa-5x"></i>
+                                <h3>Data Science</h3>
+                                <p>Empowering Your Business with Actionable Insights: Harness the power of data science to uncover valuable insights and drive informed decision-making. Our highly skilled team, with a strong background in data analysis and modeling, is committed to helping you make the most of your data, enabling you to gain a competitive edge in your industry.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="partners-section">
+                <div class="container-fluid">
+                    <h2 class="section-title">Our Experience</h2>
+                    <p class="partners-description">We collaborate with industry-leading partners to bring the best solutions to our clients.</p>
+                    <div class="row logos-row justify-content-center box-section">
+                        <div class="col-md-2">
+                            <img src="https://user-images.githubusercontent.com/128325685/231049583-2a853169-ea6b-415e-a404-0435210b1f5d.jpg" alt="greenlight" class="partner-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="https://user-images.githubusercontent.com/128325685/231049620-10662ad1-192b-4891-9257-513705af4f9e.png" alt="slalom" class="partner-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="https://user-images.githubusercontent.com/128325685/231049637-f995d84f-5009-418d-81e3-e0dd0f1985aa.jpg" alt="home depot" class="partner-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="https://user-images.githubusercontent.com/128325685/231049666-313e2821-ea9a-4089-ad32-a85ab288b8db.png" alt="CDC" class="partner-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="https://user-images.githubusercontent.com/128325685/231050078-037ac4b1-17d5-45c1-bfef-70086e80a1c9.jpg" alt="clover health" class="partner-logo">
+                        </div>
+                </div>
+            </section>
+            
+
+
+        </div>
+        <footer class="footer">
+            &copy; 2023 Scotopix. All rights reserved.
+        </footer>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
-<div class="header">
-    <div class="d-flex align-items-center">
-        <img src="https://user-images.githubusercontent.com/128325685/226222171-25b4e018-f87b-4192-8e2b-043eaf6a9e6a.svg" alt="Logo" class="logo">
-        <span class="company-name">Scotopix</span>
-    </div>
-    <div class="nav-links">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Solutions</a>
-        <a href="#" class="nav-link">Contact</a>
-    </div>
-</div>
-<div class="container">
-    <p class="intro-text">
-         Data analytics, for every situation
-    </p>
-        <img src="https://user-images.githubusercontent.com/128325685/226216083-307d8a1d-4dc1-4561-aba6-75f9b58245b0.png" alt="Data Analytics and Global Networks" class="intro-image">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="box">
-                <img src="https://source.unsplash.com/300x200/?network,technology" alt="Interconnected Networks">
-                <h3>Past Projects</h3>
-                <p>Empowering industries through seamless global connectivity.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="box">
-                <img src="https://source.unsplash.com/300x200/?collaboration,teamwork" alt="Collaboration">
-                <h3>Solutions</h3>
-                <p>Enhance teamwork and data-driven decision-making across the world.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="box">
-                <img src="https://source.unsplash.com/300x200/?innovation,technology" alt="Innovative Technology">
-                <h3>About</h3>
-                <p>Utilizing cutting-edge technology to harness the power of data.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="footer">
-    &copy; 2023 Scotopix. All rights reserved.
-</div>
 </body>
 </html>
