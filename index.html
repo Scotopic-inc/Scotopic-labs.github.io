@@ -33,7 +33,6 @@
 
         .navbar {
             background-color: #1A202C;
-            border-bottom: thick solid;
         }
         .navbar-brand span {
         color: #FFFFFF;
@@ -69,6 +68,7 @@
             font-size: 2.5rem;
             font-weight: 500;
             line-height: 1.2;
+            margin-right: 50px;
         }
 
         .intro-image {
@@ -98,10 +98,21 @@
             font-size: 1em;
         }
         .row {
-        margin-bottom: 100px;
-        padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-        }
+.col-md-4 {
+    flex-basis: calc(33.333% - 16px);
+    margin: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.industry {
+    padding: 8px 0;
+    text-align: center;
+}
 
         .navbar-toggler {
         border: none;
@@ -147,13 +158,20 @@
         padding: 50px 0;
         }
         .partners-section {
-        background-color: #717D8C;
         padding: 50px 0;
         }
         .partners-description {
             text-align: center;
             margin-bottom: 40px;
         }
+        .industry-description {
+            text-align: center;
+            margin-bottom: -5px;
+            font-size: 1.5rem;
+            font-weight: bold;
+
+        }
+
         .partner-logo {
         width: 100px;
         height: 80px;
@@ -164,6 +182,15 @@
         border-radius: 5px;
         }
 
+        .industry-content{
+            font-size: .8rem;
+
+        }
+
+        .industry{
+            font-weight: bold;
+
+        }
 
     </style>
 </head>
@@ -184,10 +211,10 @@
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Solutions</a>
+                            <a class="nav-link" href="#services-section">Solutions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#partners-section">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -206,7 +233,7 @@
                 </section>
             </div>
 
-            <section class="services-section">
+            <section class="services-section" id="services-section">
                 <div class="container-fluid">
                     <h2 class="section-title">What We Do</h2>
                     <section class="row justify-content-center box-section">
@@ -234,29 +261,40 @@
                     </section>
                 </div>
             </section>
-            <section class="partners-section">
+            <section class="partners-section" id="partners-section">
                 <div class="container-fluid">
-                    <h2 class="section-title">Our Experience</h2>
-                    <p class="partners-description">We collaborate with industry-leading partners to bring the best solutions to our clients.</p>
+                    <h2 class="section-title">Industries</h2>
+                    <p class="partners-description">Our experience spans multiple industries and projects, which gives us a unique perspective that we bring to every clients' data needs. We help you consider solutions from other industries and bridge the gap between your needs and what is possible.</p>
+                    <p class="industry-description">Explore Our Expertise</p>
                     <div class="row logos-row justify-content-center box-section">
-                        <div class="col-md-2">
-                            <img src="https://user-images.githubusercontent.com/128325685/231049583-2a853169-ea6b-415e-a404-0435210b1f5d.jpg" alt="greenlight" class="partner-logo">
+                        <div class="col-md-4">
+                            <p class="industry">Advanced Manufacturing & Semiconductors</p>
+                            <p class="industry-content">We have worked with chip manufacturers to improve their operations and deliver substantial results.</p>
                         </div>
-                        <div class="col-md-2">
-                            <img src="https://user-images.githubusercontent.com/128325685/231049620-10662ad1-192b-4891-9257-513705af4f9e.png" alt="slalom" class="partner-logo">
+                        <div class="col-md-4">
+                            <p class="industry">Technology</p>
+                            <p class="industry-content">We have deep knowledge of SAAS and have worked on several data initiatives to drive growth unicorns and startups.</p>
                         </div>
-                        <div class="col-md-2">
-                            <img src="https://user-images.githubusercontent.com/128325685/231049637-f995d84f-5009-418d-81e3-e0dd0f1985aa.jpg" alt="home depot" class="partner-logo">
+                        <div class="col-md-4">
+                            <p class="industry">Public Health & Epidemiology</p>
+                            <p class="industry-content"> We have worked with our nations health agencies to automate critical data operations.</p>
                         </div>
-                        <div class="col-md-2">
-                            <img src="https://user-images.githubusercontent.com/128325685/231049666-313e2821-ea9a-4089-ad32-a85ab288b8db.png" alt="CDC" class="partner-logo">
+                        <div class="col-md-4">
+                            <p class="industry">Consumer Products</p>
+                            <p class="industry-content"> We have experience navigating emerging consumer markets and challenges for consumer product companies.</p>
                         </div>
-                        <div class="col-md-2">
-                            <img src="https://user-images.githubusercontent.com/128325685/231050078-037ac4b1-17d5-45c1-bfef-70086e80a1c9.jpg" alt="clover health" class="partner-logo">
+                        <div class="col-md-4">
+                            <p class="industry">Retail</p>
+                            <p class="industry-content"> As retail trends move to digital first we can help you make sense of your data and take advantage of new opportunities.</p>
                         </div>
+                        <div class="col-md-4">
+                            <p class="industry">Financial Services</p>
+                            <p class="industry-content"> We help financial institutions manage risk and serve customers in this changing landscape.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
-            
+                    
 
 
         </div>
